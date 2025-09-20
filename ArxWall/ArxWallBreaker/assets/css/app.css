@@ -1,0 +1,247 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: rgb(20, 25, 17);
+  position: fixed;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(72, 255, 0, 0.01);
+  background-image: linear-gradient(transparent 15%, rgba(0,0,0,.15) 15%);
+  background-size: 15px 15px;
+  z-index: 2;
+  pointer-events: none;
+  -webkit-animation: scanline .5s infinite linear;
+     -moz-animation: scanline .5s infinite linear;
+       -o-animation: scanline .5s infinite linear;
+          animation: scanline .5s infinite linear;
+}
+
+@-webkit-keyframes scanline {
+  0% { top: 0; }
+  100% { top: 20px; }
+}
+
+@-moz-keyframes scanline {
+  0% { top: 0; }
+  100% { top: 20px; }
+}
+
+@-o-keyframes scanline {
+  0% { top: 0; }
+  100% { top: 20px; }
+}
+
+@keyframes scanline {
+  0% { top: 0; }
+  100% { top: 20px; }
+}
+
+#container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 960px;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: 'PxPlus IMB VGA8';
+  src: url('PxPlus_IBM_VGA8.ttf') format('truetype');  font-size: 1.6em;
+  letter-spacing: .1em;
+  color: rgb(60, 255, 0);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #container { width: 80%; }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  #container {
+    width: 90%;
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #container {
+    width: 90%;
+    font-size: .9em;
+  }
+}
+
+.content {
+  flex: 1;
+}
+
+.meta-byline,
+.meta-social {
+  letter-spacing: .1em;
+  color: rgb(60, 255, 0);
+}
+
+.meta-social {
+  float: right;
+  margin-left: .5em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.meta-byline:hover,
+.meta-social:hover {
+  text-decoration: none;
+  color: rgb(19, 25, 17);
+  background: rgb(60, 255, 0);
+}
+
+
+hr {
+  border: 1px solid rgb(60, 255, 0);
+}
+
+.word-list {
+  min-height: 8em;
+  padding: 0;
+  margin: 0 -1em .5em 0;
+}
+
+.word-list > li {
+  float: left;
+  margin: 0 1em .5em 0;
+  list-style-type: none;
+}
+
+.word-list:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.word-start {
+  float: left;
+  margin-right: .1em;
+}
+
+.word-entry,
+.word-guess {
+  display: block;
+  float: left;
+  padding: 0;
+  font-family: 'PxPlus IMB VGA8';
+  src: url('PxPlus_IBM_VGA8.ttf') format('truetype');  font-size: 1em;
+  letter-spacing: .1em;
+  color: transparent;
+  text-shadow: 0 0 0 rgb(60, 255, 0);
+  text-transform: uppercase;
+  background: none;
+  border: none;
+}
+
+.word-list--guess > .word-guess:hover {
+  color: rgb(17, 25, 17);
+  background: rgb(60, 255, 0);
+  cursor: pointer;
+}
+
+.word-guess--active {
+  color: rgb(18, 25, 17);
+  background: rgb(60, 255, 0);
+}
+
+.word-cmdline {
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+  padding-top: .5em;
+}
+
+.word-cmdline:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.word-cmdline > .word-entry {
+  width: 10.5em;
+}
+
+.word-entry:focus {
+  outline: none;
+}
+
+.word-caret {
+  display: block;
+  float: left;
+  width: .6em;
+  height: 1em;
+  margin-top: .15em;
+  margin-left: -10.5em;
+  background-color: rgb(60, 255, 0);
+  -webkit-animation: flicker 1s infinite;
+     -moz-animation: flicker 1s infinite;
+       -o-animation: flicker 1s infinite;
+          animation: flicker 1s infinite;
+}
+
+@-webkit-keyframes flicker {
+  0%, 25%, 75%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@-moz-keyframes flicker {
+  0%, 25%, 75%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@-o-keyframes flicker {
+  0%, 25%, 75%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes flicker {
+  0%, 25%, 75%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.word-buttons {
+  float: right;
+}
+
+.word-buttons > button {
+  float: left;
+  padding: 0;
+  margin-left: .5em;
+  font-family: 'PxPlus IMB VGA8';
+  src: url('PxPlus_IBM_VGA8.ttf') format('truetype');  font-size: 1em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: rgb(60, 255, 0);
+  background: none;
+  border: 0;
+}
+
+.word-buttons > button:first-child {
+  margin-left: 0;
+}
+
+.word-buttons > button:hover {
+  color: rgb(18, 25, 17);
+  background: rgb(60, 255, 0);
+  cursor: pointer;
+}
+
+.word-buttons > button:focus {
+  outline: none;
+}
