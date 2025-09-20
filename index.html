@@ -1,0 +1,297 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="propeller" content="a8bc48ef0413ee0b25688a7960c39ca2">
+<meta property="og:site_name" content="Arxhive27">
+<meta property="og:title" content="Loading">
+<meta property="og:description" content="Internet Brochure">
+<meta property="og:type" content="Arx">
+<meta name="og:image" itemprop="image" content="">
+  <script type="application/javascript" src="https://cdn.rawgit.com/Alorel/console-log-html/master/console-log-html.min.js"></script>
+  <link rel="icon" href="assets/img/favicon.ico">
+
+
+  <title id="title">Loading. . .</title>
+</head>
+<body>
+  <section id="bios">
+    <div id="cpn">
+       <div id="cpwarn">
+    <p>[We The Arx] <span id="year"></span></p>
+				 <script>document.getElementById("year").innerHTML = new Date().getFullYear();
+				 </script>
+       </div>
+    <p>Arxhive27</p>
+     
+    <p>Made by [md]-day Corp.</p>
+    <p>Arxhive27 Build: V0.1 Loading</p>
+    <br />
+    <br>
+       </div>
+   <div id="log" class="log">
+		 <h4>Log:</h4>
+		 <p>Booting up<span class="blink">. .</span></p>
+    <ul id="log_output"></u>
+    <div class="actions">
+    <pre style="color: #ff8614;" class="float-left">
+
+░█████╗░██████╗░██╗░░██╗██╗░░██╗██╗██╗░░░██╗███████╗██████╗░███████╗
+██╔══██╗██╔══██╗╚██╗██╔╝██║░░██║██║██║░░░██║██╔════╝╚════██╗╚════██║
+███████║██████╔╝░╚███╔╝░███████║██║╚██╗░██╔╝█████╗░░░░███╔═╝░░░░██╔╝
+██╔══██║██╔══██╗░██╔██╗░██╔══██║██║░╚████╔╝░██╔══╝░░██╔══╝░░░░░██╔╝░
+██║░░██║██║░░██║██╔╝╚██╗██║░░██║██║░░╚██╔╝░░███████╗███████╗░░██╔╝░░
+╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░╚═╝░░░╚══════╝╚══════╝░░╚═╝░░░                                                              
+    </pre>
+    <div id="stamp" class="float-right">By [md]-day</div>
+    </div>
+		</section> 
+
+  <section id="loader">
+    <div class='loader'></div>
+
+    <script>
+      ConsoleLogHTML.connect(document.getElementById("log_output")); // Redirect log messages
+      console.log("Arxhive27 Is Booting...");
+      setTimeout(function(){
+        console.log("Getting Files...")
+      }, 1000);
+      setTimeout(function(){
+        console.log("Fetched Files Successfully")
+      }, 3000);
+        setTimeout(function(){
+        console.log("Loading Components")
+      }, 5000);
+            setTimeout(function(){
+        console.log("Loading Data")
+      }, 5010);
+            setTimeout(function(){
+        console.log("Loading Archive")
+      }, 5020);
+      setTimeout(function(){
+        console.log("Loading Info")
+      }, 5030);
+       setTimeout(function(){
+        console.log("Loading Website Useability")
+      }, 5040);
+          setTimeout(function(){
+        console.log("Fetching inCloud data")
+      }, 5050);
+       setTimeout(function(){
+        console.log("Loading Images's")
+      }, 5060);
+         setTimeout(function(){
+        console.log("Loading Arx...")
+      }, 5110);
+       setTimeout(function(){
+        console.log("Retrieving Logs")
+      }, 5550);
+          setTimeout(function(){
+        console.log("Fetching HTML Pages")
+      }, 5670);
+          setTimeout(function(){
+         console.log("Arxhive27 Load Successful!")
+      }, 9700);
+			setTimeout(function(){
+				document.title = "Arxwall | Arxhive27";
+				console.log("Home Page Loaded")
+      }, 5000);
+    </script> 
+  <div class="page">
+    <iframe src="ArxWall/index.html" style="animation: fadeInAnimation ease 1s; animation-iteration-count: 1; animation-fill-mode: forwards;position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:9;">
+    Sorry, your browser doesn't allow Arxhive27
+    </iframe>
+      </div>
+
+      <script>
+        if (localStorage.hasOwnProperty("inj_boot") == true){
+          window.setTimeout(function() {
+            var biosEl = document.getElementById('bios');
+            var loaderEl = document.getElementById('loader');
+            biosEl.style.display = 'none';
+            loaderEl.style.display = 'block';
+          }, 5500);
+        } else {
+          window.setTimeout(function() {
+            var biosEl = document.getElementById('bios');
+            var loaderEl = document.getElementById('loader');
+            biosEl.style.display = 'none';
+            loaderEl.style.display = 'block';
+            localStorage.setItem("inj_boot", "true");
+          }, 9000);
+        }
+      </script>
+    </section>
+
+    <style>
+
+html {
+    position: fixed;
+}
+
+body { 
+    margin: 0; 
+    animation: fadeInAnimation ease 1s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; } 
+
+.log { 
+    text-align:center; 
+    background-color: #0e0e0f	; } 
+
+section { 
+    width: 100vw; 
+    height: 100vh; } 
+
+p { 
+    margin: 0; 
+    line-height: 1.5em; } 
+
+.blink { 
+    animation: blink-animation 1s steps(5, start) infinite; 
+    -webkit-animation: blink-animation 1s steps(5, start) infinite; } @keyframes blink-animation { to { visibility: hidden; } } @-webkit-keyframes blink-animation { to { visibility: hidden; } } 
+
+.actions { 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; } 
+
+.float-right { 
+    position: fixed; 
+    bottom: 0; 
+    right: 0; 
+    padding-right: 2em; } 
+
+.float-left { 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    padding-left: 2em; } 
+
+#bios { 
+    display: block; 
+    background: #0e0e0f; 
+    color: #7a7671; 
+    font-family: "Courier New", Courier, monospace; } 
+
+#cpn { 
+    color: #7a7671; } 
+
+#loader { 
+    display: none; 
+    background: #0e0e0f; 
+    color: #7a7771 } 
+
+.loader { 
+    position: relative; 
+    padding-top: 100px; 
+    width: 40px; 
+    margin: auto; } 
+
+.circle { 
+    position: absolute; 
+    width: 38px; 
+    height: 38px; 
+    opacity: 0; 
+    transform: rotate(225deg); 
+    animation-iteration-count: infinite;
+    animation-name: orbit; 
+    animation-duration: 5.5s; } 
+
+    :after { 
+        content: ''; 
+        position: absolute; 
+        width: 5px; 
+        height: 5px; 
+        border-radius: 5px; 
+        background: #0e0e0f; /* Pick a color */ } :nth-child(2) { animation-delay: 240ms; } :nth-child(3) { animation-delay: 480ms; } :nth-child(4) { animation-delay: 720ms; } :nth-child(5) { animation-delay: 960ms; } @keyframes orbit { 0% { transform:rotate(225deg); opacity: 1; animation-timing-function: ease-out; } 7% { transform:rotate(345deg); animation-timing-function: linear; } 30% { transform:rotate(455deg); animation-timing-function: ease-in-out; } 39% { transform:rotate(690deg); animation-timing-function: linear; } 70% { transform:rotate(815deg); opacity: 1; animation-timing-function: ease-out; } 75% { transform:rotate(945deg); animation-timing-function: ease-out; } 76% { transform:rotate(945deg); opacity: 0; } 100% { transform:rotate(945deg); opacity: 0; } } @keyframes fadeInAnimation { 0% { opacity: 0; } 100% { opacity: 1; } } * { cursor: not-allowed; user-select: none; overflow: none; } 
+        
+    #stamp { 
+    color: #ffa113; } 
+
+#cpwarn { 
+    color: #ffa113; } 
+
+ul { 
+    
+    list-style-position: inside; 
+    padding-left: 0; 
+    display: inline-block; 
+    text-align: left }
+
+
+    /* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #4cd124;
+    color: darkgreen;
+    margin-bottom: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: darkgreen;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: white;
+
+  }
+
+
+
+  /* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: darkred;
+    margin-bottom: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: darkred;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: white;
+
+  }
+
+    </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+ </body>
+</html>

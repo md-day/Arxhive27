@@ -1,0 +1,79 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+body {
+  background-color: black;
+  font-family: 'PxPlus IMB VGA8';
+  src: url('PxPlus_IBM_VGA8.ttf') format('truetype');
+  position: fixed;
+}
+#terminal {
+  background-image: url('bg.png');
+  background-color: black;
+  width:890px;
+  height: 616px;
+  margin:40px auto;
+  border-radius: 5px;
+  border: 5px solid;
+  padding: 20px;
+  font-size:22px;
+  font-family: 'PxPlus IMB VGA8';
+  src: url('PxPlus_IBM_VGA8.ttf') format('truetype');
+  color:#fbc41f;
+  overflow: auto;
+}
+#terminal-screen {
+	width:600px;
+	float:left;
+  font-family: 'PxPlus IMB VGA8';
+  src: url('PxPlus_IBM_VGA8.ttf') format('truetype');
+}
+#terminal-sidebar {
+	width:250px;
+	float:right;
+  font-family: 'PxPlus IMB VGA8';
+  src: url('PxPlus_IBM_VGA8.ttf') format('truetype');
+}
+#terminal-history {
+	height:416px;
+  font-family: 'PxPlus IMB VGA8';
+  src: url('PxPlus_IBM_VGA8.ttf') format('truetype');
+}
+#terminal-head {
+	margin-bottom: 20px;
+  font-family: 'PxPlus IMB VGA8';
+  src: url('PxPlus_IBM_VGA8.ttf') format('truetype');
+}
+#terminal pre, #terminal span {
+  margin:0;
+  font-family: 'PxPlus IMB VGA8';
+  src: url('PxPlus_IBM_VGA8.ttf') format('truetype');
+}
+#terminal span {
+  display: inline;
+  font-family: 'PxPlus IMB VGA8';
+  src: url('PxPlus_IBM_VGA8.ttf') format('truetype');
+}
+
+#terminal-left {
+  width: 50%;
+  float:left;
+  font-family: 'PxPlus IMB VGA8';
+  src: url('PxPlus_IBM_VGA8.ttf') format('truetype');
+}
+#terminal-right {
+  width: 50%;
+  float: right;
+  font-family: 'PxPlus IMB VGA8';
+  src: url('PxPlus_IBM_VGA8.ttf') format('truetype');
+}
+.data, .byte {
+  display:inline;
+  font-family: 'PxPlus IMB VGA8';
+  src: url('PxPlus_IBM_VGA8.ttf') format('truetype');
+}
+
+.data.selected {
+  color:black;
+  background-color: #fbc41f;
+}
