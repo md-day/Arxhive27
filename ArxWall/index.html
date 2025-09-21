@@ -11,6 +11,7 @@
 
 
 </head>
+
 <body ng-app="FalloutConsole">
   <main ng-controller="MainController">
     <div id="terminal">
@@ -22,6 +23,23 @@
           <pre>Press Enter to Begin</pre>
         </div>
       </div>
+
+<audio id="myAudio" src="../assets/audio/A Mind Is Born.mp3" preload="auto"></audio>
+
+    <script>
+        // Get the audio element
+        var audio = document.getElementById('myAudio');
+
+        // Add an event listener for keydown events on the document
+        document.addEventListener('keydown', function(event) {
+            // Check if the pressed key is Enter (keyCode 13)
+            if (event.keyCode === 13) {
+                audio.play(); // Play the audio
+            }
+        });
+    </script>
+
+
       <div class="playing-view" ng-show="gamestate === 'playing'" ng-cloak>
         <div id="terminal-head">
           <pre>Arxhive27 (TM) Phalanx Protocol</pre>
